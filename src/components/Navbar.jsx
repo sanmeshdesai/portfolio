@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react'
 import { Link,NavLink } from 'react-router-dom'
 import { Menu, X } from 'lucide-react';
 
@@ -24,7 +23,7 @@ const Navbar = ({open, setOpen}) => {
         <li><NavLink className={({ isActive }) =>
     `transition hover:text-black/70
      ${isActive ? "text-black font-semibold border-b-2 border-black" : ""}`
-  } to='/projects'>Portfolio</NavLink></li>
+  } to='/contact-us'>Contact</NavLink></li>
         <li><NavLink className={({ isActive }) =>
     `transition hover:text-black/70
      ${isActive ? "text-black font-semibold border-b-2 border-black" : ""}`
@@ -45,10 +44,22 @@ const Navbar = ({open, setOpen}) => {
       text-lg transition-transform duration-500 ease-in-out
       ${open ? "translate-x-0 " : "translate-x-full "}
       `}>
-        <li><Link onClick={() => setOpen(false)} className="hover:text-black/70 transition" to='/'>Home</Link></li>
-        <li><Link onClick={() => setOpen(false)} className="hover:text-black/70 transition" to='/about'>About</Link></li>
-        <li><Link onClick={() => setOpen(false)} className="hover:text-black/70 transition" to='/'>Portfolio</Link></li>
-        <li><Link onClick={() => setOpen(false)} className="hover:text-black/70 transition" to='/'>Pricing</Link></li>
+        <li><NavLink onClick={() => setOpen(false)} className={({ isActive }) =>
+    `transition hover:text-black/70
+     ${isActive ? "text-black font-semibold border-b-2 border-black" : ""}`
+  } to='/'>Home</NavLink></li>
+        <li><NavLink onClick={() => setOpen(false)} className={({ isActive }) =>
+    `transition hover:text-black/70
+     ${isActive ? "text-black font-semibold border-b-2 border-black" : ""}`
+  } to='/about'>About</NavLink></li>
+        <li><NavLink onClick={() => setOpen(false)} className={({ isActive }) =>
+    `transition hover:text-black/70
+     ${isActive ? "text-black font-semibold border-b-2 border-black" : ""}`
+  } to='/contact-us'>Contact Me</NavLink></li>
+        <li><NavLink onClick={() => setOpen(false)} className={({ isActive }) =>
+    `transition hover:text-black/70
+     ${isActive ? "text-black font-semibold border-b-2 border-black" : ""}`
+  } to='/p'>Pricing</NavLink></li>
       </ul>
     
     
