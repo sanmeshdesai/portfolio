@@ -1,0 +1,15 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- White filled circle -->
+  <circle cx="100" cy="100" r="100" fill="white"/>
+
+  <!-- Centered S -->
+  <text x="100" y="118"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        fill="black"
+        font-size="140"
+        font-family="Inter, Space Grotesk, system-ui"
+        font-weight="900">
+    S
+  </text>
+</svg>
