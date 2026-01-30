@@ -29,12 +29,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+
       >
+        <div className="inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-purple-500/10 -z-10">
         <Navbar/>
         <main className="pt-24">
         {children}
         </main>
+        </div>
       </body>
     </html>
   );
